@@ -26,7 +26,7 @@ public class Runner {
 		//Create a random get rekt room.
 		int get = (int)(Math.random()*building.length);
 		int rekt = (int)(Math.random()*building.length);
-		building[1][3] = new CollegeApps(get, rekt);
+		building[1][2] = new CollegeApps(get, rekt);
 		
 		
 		
@@ -113,6 +113,9 @@ public class Runner {
 		gameOn = false;
 	}
 	
+	public static void returnBegin() 
+	{
 
+	}
 
 }

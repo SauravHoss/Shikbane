@@ -1,13 +1,12 @@
 
-public class CollegeApps extends Room
-
+public class BRoom extends Room 
 {
-
-	public CollegeApps(int get, int rekt) 
+	public BRoom(int x, int y) 
 	{
-		super(get, rekt);
+		super(x, y);
 		// TODO Auto-generated constructor stub
 	}
+	@Override
 
 	public void enterRoom(Person x) 
 	{
@@ -15,11 +14,10 @@ public class CollegeApps extends Room
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
-		System.out.println("You can never escape this room. YOU DIED");
+		System.out.println("Die now.");
 		returnBegin(x);
-		
 	}
-
+	
 	public void returnBegin(Person x) 
 	{
 		occupant = x;

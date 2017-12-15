@@ -1,5 +1,6 @@
 
-public class WinningRoom extends Room {
+public class WinningRoom extends Room 
+{
 
 
 

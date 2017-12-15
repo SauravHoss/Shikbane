@@ -20,5 +20,10 @@ public class Room {
 	{
 		occupant = null;
 	}
+	public void print() 
+	{
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
