@@ -1,13 +1,13 @@
 public class Board 
 {
-    private Room[][] gaem;
+    private static Room[][] gaem;
     
     public Board(Room[][] gaem)
     {
         this.gaem = gaem;
     }
 
-    public void printMap()
+    public static void printMap()
     {
 
         for(Room[] row : gaem)

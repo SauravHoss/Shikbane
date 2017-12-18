@@ -28,5 +28,11 @@ public class Person {
 		this.yLoc = yLoc;
 	}
 
+	public void print() 
+	{
+		// TODO Auto-generated method stub
+		
+	}
+
 
 }

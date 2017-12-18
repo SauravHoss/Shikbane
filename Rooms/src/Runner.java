@@ -28,7 +28,7 @@ public class Runner {
 		int rekt = (int)(Math.random()*building.length);
 		building[1][2] = new CollegeApps(get, rekt);
 		
-		
+		Board.printMap();
 		
 		 //Setup player 1 and the input scanner
 		Person player1 = new Person("FirstName", "FamilyName", 0,0);
