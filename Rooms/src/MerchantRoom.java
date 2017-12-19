@@ -1,4 +1,5 @@
 
-public class MerchantRoom {
+public class MerchantRoom extends Room
+{
 
 }

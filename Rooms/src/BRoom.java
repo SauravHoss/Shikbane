@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class BRoom extends Room 
 {
@@ -14,8 +15,20 @@ public class BRoom extends Room
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
-		System.out.println("Die now.");
-		returnBegin(x);
+		System.out.println("You have entered sa");
+		Scanner in = new Scanner(System.in);
+			
+		while(in.nextLine().equals("yes"))
+		{
+			if()
+			{
+				
+			}
+			else if()
+			{
+				returnBegin(x);
+			}
+		}
 	}
 	
 	public void returnBegin(Person x) 
