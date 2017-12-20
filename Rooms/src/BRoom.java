@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class BRoom extends Room 
 {
-	public BRoom(int x, int y) 
+	public BRoom(int xp, int yp) 
 	{
-		super(x, y);
+		super(xp, yp);
 		// TODO Auto-generated constructor stub
 	}
 	@Override
@@ -16,19 +16,19 @@ public class BRoom extends Room
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
 		System.out.println("You have entered sa");
-		Scanner in = new Scanner(System.in);
+		//Scanner in = new Scanner(System.in);
 			
-		while(in.nextLine().equals("yes"))
+		/*//while(in.nextLine().equals("yes"))
 		{
-			if()
+			//if()
 			{
 				
 			}
-			else if()
+			//else if()
 			{
 				returnBegin(x);
 			}
-		}
+		}*/
 	}
 	
 	public void returnBegin(Person x) 

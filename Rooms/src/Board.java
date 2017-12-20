@@ -1,16 +1,17 @@
 public class Board 
 {
-    private static Room[][] gaem;
+    private static Room[][] game;
     
-    public Board(Room[][] gaem)
+    @SuppressWarnings("static-access")
+	public Board(Room[][] game)
     {
-        this.gaem = gaem;
+        this.game = game;
     }
 
     public static void printMap()
     {
 
-        for(Room[] row : gaem)
+        for(Room[] row : game)
         {
             for (Room room : row)
             {

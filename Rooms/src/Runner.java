@@ -7,6 +7,7 @@ public class Runner {
 	
 	public static void main(String[] args)
 	{
+		//Board.printMap();
 		Room[][] building = new Room[5][5];
 		
 		//Fill the building with normal rooms
@@ -24,11 +25,14 @@ public class Runner {
 		building[x][y] = new WinningRoom(x, y);
 		
 		//Create a random get rekt room.
-		int get = (int)(Math.random()*building.length);
-		int rekt = (int)(Math.random()*building.length);
-		building[1][2] = new CollegeApps(get, rekt);
+	
+		building[1][2] = new CollegeApps(1,2);
 		
-		Board.printMap();
+		//Create a random get rekt room.
+		
+		building[2][3] = new BRoom(1,3);
+				
+		
 		
 		 //Setup player 1 and the input scanner
 		Person player1 = new Person("FirstName", "FamilyName", 0,0);
