@@ -1,14 +1,13 @@
 public class Board 
 {
-    private static Room[][] game;
+    private Room[][] game;
     
-    @SuppressWarnings("static-access")
 	public Board(Room[][] game)
     {
         this.game = game;
     }
 
-    public static void printMap()
+    public void printMap()
     {
 
         for(Room[] row : game)
@@ -20,4 +19,7 @@ public class Board
             System.out.println();
         }
     }
+    
+    
+   
 }

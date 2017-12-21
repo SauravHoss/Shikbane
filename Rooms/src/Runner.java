@@ -7,7 +7,6 @@ public class Runner {
 	
 	public static void main(String[] args)
 	{
-		//Board.printMap();
 		Room[][] building = new Room[5][5];
 		
 		//Fill the building with normal rooms
@@ -32,9 +31,10 @@ public class Runner {
 		
 		building[2][3] = new BRoom(1,3);
 				
+		Board game = new Board(building);
+		game.printMap();
 		
-		
-		 //Setup player 1 and the input scanner
+		//Setup player 1 and the input scanner
 		Person player1 = new Person("FirstName", "FamilyName", 0,0);
 		building[0][0].enterRoom(player1);
 		Scanner in = new Scanner(System.in);
