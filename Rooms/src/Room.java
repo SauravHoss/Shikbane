@@ -3,6 +3,7 @@ public class Room
 {
 	Person occupant;
 	int xLoc,yLoc;
+	boolean explored = false;
 	
 	public Room(int x, int y)
 	{
@@ -24,7 +25,16 @@ public class Room
 	public void print() 
 	{
 		// TODO Auto-generated method stub
-		
+		if(!explored && occupant==null)
+		{
+			System.out.print("[ ]");
+		}
+		else if(occupant!=null)
+		{
+			System.out.print("[x");
+			occupant.print();
+			System.out.print("]");
+		}
 	}
 	
 }

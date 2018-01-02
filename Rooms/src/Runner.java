@@ -30,9 +30,10 @@ public class Runner {
 		//Create a random get rekt room.
 		
 		building[2][3] = new BRoom(1,3);
-				
+		
+		//Create a board.
 		Board game = new Board(building);
-		game.printMap();
+		
 		
 		//Setup player 1 and the input scanner
 		Person player1 = new Person("FirstName", "FamilyName", 0,0);
@@ -45,10 +46,12 @@ public class Runner {
 			if(validMove(move, player1, building))
 			{
 				System.out.println("Your coordinates: row = " + player1.getxLoc() + " col = " + player1.getyLoc());
-				
+				game.printMap();
 			}
-			else {
+			else 
+			{
 				System.out.println("Please choose a valid move.");
+				game.printMap();
 			}
 			
 			
