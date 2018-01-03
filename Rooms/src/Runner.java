@@ -35,16 +35,19 @@ public class Runner {
 		
 		
 		//Setup player 1 and the input scanner
+		Scanner in1 = new Scanner(System.in);
+		String FirstName = in1.nextLine();
+		
 		Person player1 = new Person("FirstName", "FamilyName", 0,0);
 		building[0][0].enterRoom(player1);
 		Scanner in = new Scanner(System.in);
 		while(gameOn)
 		{
-			System.out.println("Where would you like to move? (Choose N, S, E, W)" +   "			Loves:" + player1.loves);
+			System.out.println("Where would you like to move? (Choose N, S, E, W)" +   "			Lives:" + player1.lives);
 			String move = in.nextLine();
 			if(validMove(move, player1, building))
 			{
-				System.out.println("Your coordinates: row = " + player1.getxLoc() + " col = " + player1.getyLoc() + "					Loves:" + player1.loves);
+				System.out.println("Your coordinates: row = " + player1.getxLoc() + " col = " + player1.getyLoc() + "					Lives:" + player1.lives);
 				game.printMap();
 			}
 			else 

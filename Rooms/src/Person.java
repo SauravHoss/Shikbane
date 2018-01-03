@@ -3,7 +3,7 @@ public class Person {
 	String firstName;
 	String familyName;
 	int xLoc, yLoc;
-	int loves = 3;
+	int lives = 3;
 	
 	public int getxLoc() {
 		return xLoc;
@@ -31,9 +31,9 @@ public class Person {
 	
 	public void deder(Person x) 
 	{
-		if (loves !=0)
+		if (lives !=0)
 		{
-		loves--;
+		lives--;
 		}
 		else 
 		{
