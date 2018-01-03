@@ -28,6 +28,18 @@ public class Person {
 		this.xLoc = xLoc;
 		this.yLoc = yLoc;
 	}
+	
+	public void deder(Person x) 
+	{
+		if (loves !=0)
+		{
+		loves--;
+		}
+		else 
+		{
+			Runner.gameOff();
+		}
+	}
 
 	public void print() 
 	{

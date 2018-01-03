@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Runner {
 	
-
 	private static boolean gameOn = true;
 	
 	public static void main(String[] args)
@@ -53,8 +52,7 @@ public class Runner {
 				System.out.println("Please choose a valid move.");
 				game.printMap();
 			}
-			
-			
+				
 		}
 		in.close();
 	}

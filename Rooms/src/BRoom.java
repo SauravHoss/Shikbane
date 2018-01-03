@@ -31,6 +31,8 @@ public class BRoom extends Room
 		}*/
 	}
 	
+	
+	
 	public void returnBegin(Person x) 
 	{
 		occupant = x;

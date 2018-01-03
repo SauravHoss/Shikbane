@@ -15,11 +15,13 @@ public class CollegeApps extends Room
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
-		x.loves--;
+		x.deder(x);
 		System.out.println("You can never escape this room. YOU DIED");
 		returnBegin(x);
 		
 	}
+	
+
 
 	public void returnBegin(Person x) 
 	{
