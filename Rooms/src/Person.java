@@ -3,6 +3,7 @@ public class Person {
 	String firstName;
 	String familyName;
 	int xLoc, yLoc;
+	int loves = 3;
 	
 	public int getxLoc() {
 		return xLoc;

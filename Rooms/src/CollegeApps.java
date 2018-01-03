@@ -15,6 +15,7 @@ public class CollegeApps extends Room
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
+		x.loves--;
 		System.out.println("You can never escape this room. YOU DIED");
 		returnBegin(x);
 		
