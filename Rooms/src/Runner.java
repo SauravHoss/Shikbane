@@ -21,14 +21,66 @@ public class Runner {
 		building[5][6] = new WinningRoom(0, 0);
 		
 		//Create killer rooms.
-		building[0][1] = new CollegeApps(3,3);
-
+		building[0][1] = new CollegeApps(0,0);
+		building[1][1] = new CollegeApps(0,0);
+		building[3][1] = new CollegeApps(0,0);
+		building[4][1] = new CollegeApps(0,0);
+		building[5][1] = new CollegeApps(0,0);
+		building[6][1] = new CollegeApps(0,0);
+		building[8][1] = new CollegeApps(0,0);
+		building[4][2] = new CollegeApps(0,0);
+		building[5][2] = new CollegeApps(0,0);		
+		building[6][2] = new CollegeApps(0,0);
+		building[9][2] = new CollegeApps(0,0);
+		building[10][2] = new CollegeApps(0,0);
+		building[1][3] = new CollegeApps(0,0);
+		building[2][3] = new CollegeApps(0,0);
+		building[4][3] = new CollegeApps(0,0);
+		building[5][3] = new CollegeApps(0,0);
+		building[10][3] = new CollegeApps(0,0);
+		building[1][4] = new CollegeApps(0,0);
+		building[2][4] = new CollegeApps(0,0);
+		building[7][4] = new CollegeApps(0,0);
+		building[8][4] = new CollegeApps(0,0);
+		building[10][4] = new CollegeApps(0,0);
+		building[4][5] = new CollegeApps(0,0);
+		building[6][5] = new CollegeApps(0,0);
+		building[7][5] = new CollegeApps(0,0);		
+		building[8][5] = new CollegeApps(0,0);
+		building[10][5] = new CollegeApps(0,0);
+		building[0][6] = new CollegeApps(0,0);
+		building[1][6] = new CollegeApps(0,0);		
+		building[10][6] = new CollegeApps(0,0);
+		building[1][7] = new CollegeApps(0,0);
+		building[2][7] = new CollegeApps(0,0);		
+		building[3][7] = new CollegeApps(0,0);
+		building[4][7] = new CollegeApps(0,0);
+		building[6][7] = new CollegeApps(0,0);
+		building[8][7] = new CollegeApps(0,0);
+		building[10][7] = new CollegeApps(0,0);
+		building[1][8] = new CollegeApps(0,0);
+		building[2][8] = new CollegeApps(0,0);		
+		building[3][8] = new CollegeApps(0,0);
+		building[5][8] = new CollegeApps(0,0);
+		building[6][8] = new CollegeApps(0,0);
+		building[8][8] = new CollegeApps(0,0);
+		building[9][8] = new CollegeApps(0,0);
+		building[10][8] = new CollegeApps(0,0);
+		building[0][10] = new CollegeApps(0,0);
+		building[3][10] = new CollegeApps(0,0);		
+		building[4][10] = new CollegeApps(0,0);
+		
 		//Create get a life rooms.
-		building[1][3] = new BRoom(0,0);
+		building[8][2] = new BRoom(0,0);
+		building[3][5] = new BRoom(0,0);
+		building[5][5] = new BRoom(0,0);
+		building[6][6] = new BRoom(0,0);
+		building[9][7] = new BRoom(0,0);
+		building[8][10] = new BRoom(0,0);
 		
 		//Create teleporters.
 		building[2][0] = new MerchantRoom(10,10);
-		building[10][0] = new MerchantRoom(6,10);
+		building[6][10] = new MerchantRoom(10,0);
 		building[1][10] = new MerchantRoom(5,7);
 
 
