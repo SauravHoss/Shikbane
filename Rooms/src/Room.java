@@ -11,6 +11,7 @@ public class Room
 		xLoc = x;
 		yLoc = y;
 	}
+	
 	public void enterRoom(Person x)
 	{
 		System.out.println(getrando());
@@ -44,10 +45,13 @@ public class Room
 	}
 	
 	private String [] randomroomerz= 
-		{
-				"Empty room.",
-				"Ain't much in here, gotta keep moving.",
-				"*ran across in fear* N-nothing in here"			
-		};
-	
+	{
+		"Empty room.",
+		"Ain't much in here, gotta keep moving.",
+		"*runs across in fear* N-nothing in here",
+		"*has an existential crisis, nothing even happened*",
+		"I should keep going.",
+		"Can something kill me already this is getting boring.",
+		"No monsters? *YAWN*"
+	};	
 }

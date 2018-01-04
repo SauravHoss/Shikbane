@@ -1,8 +1,8 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Runner {
-	
+public class Runner 
+{
 	private static boolean gameOn = true;
 	
 	public static void main(String[] args)
@@ -83,9 +83,6 @@ public class Runner {
 		building[2][0] = new MerchantRoom(10,10);
 		building[6][10] = new MerchantRoom(10,0);
 		building[1][10] = new MerchantRoom(5,7);
-
-
-		
 		
 		//Create a board.
 		Board game = new Board(building);
@@ -119,7 +116,8 @@ public class Runner {
 	public static boolean validMove(String move, Person p, Room[][] map)
 	{
 		move = move.toLowerCase().trim();
-		switch (move) {
+		switch (move) 
+		{
 			case "n":
 				if (p.getxLoc() > 0)
 				{
@@ -172,6 +170,7 @@ public class Runner {
 		}
 		return true;
 	}
+	
 	public static void gameOff()
 	{
 		gameOn = false;
@@ -184,12 +183,14 @@ public class Runner {
 	}
 	
 	private static String [] randomz= 
-		{
-				"Nuh-uh.",
-				"Can't go that way",
-				"I must say no.",
-				"Not that way boss.",
-				"Can't go that way.",
-				"I ain't running face worst into a wall"
-		};
+	{
+		"Nuh-uh.",
+		"Can't go that way",
+		"I must say no.",
+		"Not that way boss.",
+		"Can't go that way.",
+		"I ain't running face worst into a wall.",
+		"Ain't no door over there.",
+		"Negative."
+	};
 }

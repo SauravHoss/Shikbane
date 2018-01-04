@@ -1,23 +1,28 @@
 
-public class Person {
+public class Person 
+{
 	String firstName;
 	String familyName;
 	int xLoc, yLoc;
 	int lives = 3;
 	
-	public int getxLoc() {
+	public int getxLoc() 
+	{
 		return xLoc;
 	}
 
-	public void setxLoc(int xLoc) {
+	public void setxLoc(int xLoc) 
+	{
 		this.xLoc = xLoc;
 	}
 
-	public int getyLoc() {
+	public int getyLoc() 
+	{
 		return yLoc;
 	}
 
-	public void setyLoc(int yLoc) {
+	public void setyLoc(int yLoc) 
+	{
 		this.yLoc = yLoc;
 	}
 
@@ -35,10 +40,11 @@ public class Person {
 		if (lives !=0)
 		{
 		lives--;
+		System.out.println("\n YOU DIED.");
 		}
 		else 
 		{
-			System.out.println("I can love no more.");
+			System.out.println("You can love no more.");
 			Runner.gameOff();
 		}
 	}
@@ -47,6 +53,4 @@ public class Person {
 	{
 		
 	}
-
-
 }

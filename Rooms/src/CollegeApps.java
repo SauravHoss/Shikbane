@@ -1,7 +1,6 @@
 import java.util.Random;
 
 public class CollegeApps extends Room
-
 {
 //Room that kills player and teleports them back to spawn. There are many like it but this is mine.
 	public CollegeApps(int get, int rekt) 
@@ -15,7 +14,7 @@ public class CollegeApps extends Room
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
 		x.deder(x);
-		System.out.println(getRando() + "\n YOU DIED.");
+		System.out.println(getRando());
 	}
 	
 	private String getRando () 
@@ -25,11 +24,20 @@ public class CollegeApps extends Room
 	}
 	
 	private String [] randomdedmsgs = 
-		{
-				"A monster split you in twain.",
-				"A witch sent you back to spawn, by decapatating you",
-				"You had a heartattack. Shouldn't have had that other burger"	
-		};
+	{
+		"Hyperion would like to remind you there is only thing worse than respawning, and that is not respawning.",
+		"Between you and me, that thing that killed you is a total ****. Please disregard this message if you committed suicide.",
+		"Anyone can live. Have to the courage to die!",
+		"So, how are things?",
+		"Oh, its you again.",
+		"A monster split you in twain.",
+		"A witch sent you back to spawn, by decapatating you.",
+		"You had a heartattack. Shouldn't have had that other burger.",	
+		"Enjoy, your new you!",
+		"Aww. Again?",
+		"Hyperion wishes to remind you that by using the respawn station, you have forfeited your right to reproduce.",
+		"I'm sure it wasn't your fault.",
+	};
 	
 	
 }

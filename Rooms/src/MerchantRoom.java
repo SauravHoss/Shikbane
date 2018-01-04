@@ -6,7 +6,9 @@ public class MerchantRoom extends Room
 	{
 		super(poo, loo);
 	}
+	
 //#yoloteleportz
+	
 	public void enterRoom(Person x) 
 	{
 		occupant = x;
