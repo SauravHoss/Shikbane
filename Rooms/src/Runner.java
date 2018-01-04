@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Runner {
@@ -107,7 +108,7 @@ public class Runner {
 			}
 			else 
 			{
-				System.out.println("I can't go that way.");
+				System.out.println(getrandoz());
 				game.printMap();
 			}
 				
@@ -175,4 +176,20 @@ public class Runner {
 	{
 		gameOn = false;
 	}
+	
+	private static String getrandoz()
+	{
+		Random r = new Random();
+		return randomz[r.nextInt(randomz.length)];	
+	}
+	
+	private static String [] randomz= 
+		{
+				"Nuh-uh.",
+				"Can't go that way",
+				"I must say no.",
+				"Not that way boss.",
+				"Can't go that way.",
+				"I ain't running face worst into a wall"
+		};
 }

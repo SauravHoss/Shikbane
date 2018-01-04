@@ -15,7 +15,7 @@ public class CollegeApps extends Room
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
 		x.deder(x);
-		System.out.println(getRando());
+		System.out.println(getRando() + "\n YOU DIED.");
 	}
 	
 	private String getRando () 

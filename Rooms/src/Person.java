@@ -38,7 +38,7 @@ public class Person {
 		}
 		else 
 		{
-			System.out.print("I can love no more.");
+			System.out.println("I can love no more.");
 			Runner.gameOff();
 		}
 	}

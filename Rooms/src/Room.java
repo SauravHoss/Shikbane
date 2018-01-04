@@ -1,3 +1,4 @@
+import java.util.Random;
 
 public class Room 
 {
@@ -12,7 +13,7 @@ public class Room
 	}
 	public void enterRoom(Person x)
 	{
-		System.out.println("I have to keep moving");
+		System.out.println(getrando());
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
@@ -35,5 +36,18 @@ public class Room
 			System.out.print("]");
 		}
 	}
+	
+	private String getrando ()
+	{
+		Random r = new Random();
+		return randomroomerz[r.nextInt(randomroomerz.length)];	
+	}
+	
+	private String [] randomroomerz= 
+		{
+				"Empty room.",
+				"Ain't much in here, gotta keep moving.",
+				"*ran across in fear* N-nothing in here"			
+		};
 	
 }
