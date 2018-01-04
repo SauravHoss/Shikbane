@@ -7,9 +7,14 @@ public class Runner
 	
 	public static void main(String[] args)
 	{
+
+		System.out.println("Shikabane \n \n \n");
+		System.out.println("By Daniel Li and Saurav Hossain");
+		System.out.println("Welcome to a world of misery. Press 'Enter' to Begin.");
+		
 		Room[][] building = new Room[11][11];
 		
-		//Fill the building with empty rooms
+		//Fill the building with rooms
 		for (int x = 0; x<building.length; x++)
 		{
 			for (int y = 0; y < building[x].length; y++)
