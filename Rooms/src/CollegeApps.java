@@ -1,3 +1,4 @@
+import java.util.Random;
 
 public class CollegeApps extends Room
 
@@ -14,8 +15,21 @@ public class CollegeApps extends Room
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
 		x.deder(x);
-		System.out.println("You can never escape this room. YOU DIED");
+		System.out.println(getRando());
 	}
+	
+	private String getRando () 
+	{
+		Random r = new Random ();
+		return randomdedmsgs[r.nextInt(randomdedmsgs.length)];
+	}
+	
+	private String [] randomdedmsgs = 
+		{
+				"A monster split you in twain.",
+				"A witch sent you back to spawn, by decapatating you",
+				"You had a heartattack. Shouldn't have had that other burger"	
+		};
 	
 	
 }
