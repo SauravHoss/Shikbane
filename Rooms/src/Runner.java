@@ -6,9 +6,9 @@ public class Runner {
 	
 	public static void main(String[] args)
 	{
-		Room[][] building = new Room[5][5];
+		Room[][] building = new Room[11][11];
 		
-		//Fill the building with normal rooms
+		//Fill the building with empty rooms
 		for (int x = 0; x<building.length; x++)
 		{
 			for (int y = 0; y < building[x].length; y++)
@@ -17,22 +17,25 @@ public class Runner {
 			}
 		}
 		
-		//Create a random winning room.
-		int x = (int)(Math.random()*building.length);
-		int y = (int)(Math.random()*building.length);
-		building[x][y] = new WinningRoom(x, y);
+		//Create a winning room.
+		building[5][6] = new WinningRoom(0, 0);
 		
-		//Create a random get rekt room.
-	
-		building[1][2] = new CollegeApps(1,2);
+		//Create killer rooms.
+		building[0][1] = new CollegeApps(3,3);
+
+		//Create get a life rooms.
+		building[1][3] = new BRoom(0,0);
 		
-		//Create a random get rekt room.
+		//Create teleporters.
+		building[2][0] = new MerchantRoom(10,10);
+		building[10][0] = new MerchantRoom(6,10);
+		building[1][10] = new MerchantRoom(5,7);
+
+
 		
-		building[2][3] = new BRoom(1,3);
 		
 		//Create a board.
 		Board game = new Board(building);
-		
 		
 		//Setup player 1 and the input scanner
 		Scanner in1 = new Scanner(System.in);
@@ -43,16 +46,16 @@ public class Runner {
 		Scanner in = new Scanner(System.in);
 		while(gameOn)
 		{
-			System.out.println("Where would you like to move? (Choose N, S, E, W)" +   "			Lives:" + player1.lives);
+			System.out.println("Which way should I go? (Choose N, S, E, W)" + "\n");
 			String move = in.nextLine();
 			if(validMove(move, player1, building))
 			{
-				System.out.println("Your coordinates: row = " + player1.getxLoc() + " col = " + player1.getyLoc() + "					Lives:" + player1.lives);
+				System.out.println("My Coordinates: Row = " + player1.getxLoc() + " Col = " + player1.getyLoc() + "					Lives:" + player1.lives);
 				game.printMap();
 			}
 			else 
 			{
-				System.out.println("Please choose a valid move.");
+				System.out.println("I can't go that way.");
 				game.printMap();
 			}
 				
@@ -120,10 +123,4 @@ public class Runner {
 	{
 		gameOn = false;
 	}
-	
-	public static void returnBegin() 
-	{
-
-	}
-
 }

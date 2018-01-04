@@ -29,6 +29,7 @@ public class Person {
 		this.yLoc = yLoc;
 	}
 	
+	//Basically kills the person by limiting lives (or "loves")  
 	public void deder(Person x) 
 	{
 		if (lives !=0)
@@ -43,7 +44,6 @@ public class Person {
 
 	public void print() 
 	{
-		// TODO Auto-generated method stub
 		
 	}
 

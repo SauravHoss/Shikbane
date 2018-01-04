@@ -12,7 +12,7 @@ public class Room
 	}
 	public void enterRoom(Person x)
 	{
-		System.out.println("You enter a plain old room");
+		System.out.println("I have to keep moving");
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
@@ -24,7 +24,6 @@ public class Room
 	}
 	public void print() 
 	{
-		// TODO Auto-generated method stub
 		if(!explored && occupant==null)
 		{
 			System.out.print("[ ]");

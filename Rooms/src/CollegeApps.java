@@ -2,33 +2,20 @@
 public class CollegeApps extends Room
 
 {
-
+//Room that kills player and teleports them back to spawn. There are many like it but this is mine.
 	public CollegeApps(int get, int rekt) 
 	{
 		super(get, rekt);
-		// TODO Auto-generated constructor stub
 	}
 
 	public void enterRoom(Person x) 
 	{
-		// TODO Auto-generated method stub
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
 		x.deder(x);
 		System.out.println("You can never escape this room. YOU DIED");
-		returnBegin(x);
-		
 	}
 	
-
-
-	public void returnBegin(Person x) 
-	{
-		occupant = x;
-		x.setxLoc(0);
-		x.setyLoc(0);
-		System.out.println("poof~");
-		
-	}
+	
 }
