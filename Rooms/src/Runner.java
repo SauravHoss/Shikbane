@@ -14,7 +14,7 @@ public class Runner
 							+ "\n					    SHIKABANE\n\n\n"
 							+ "You've wandered into the wrong place traveler. The only thing you know here is where you died last \nand where you are currently (both marked with an 'x', so conveniently)."
 							+ " Sometimes dying is good. \nSometimes it's not. Figure it out for yourself, what am I your mommy?."
-							+ " Welcome to a world of misery. \n\n	        		    Press 'Enter' to Begin."
+							+ " Welcome to a world of misery. \n\n	        		     Press 'Enter' to Begin. "
 						  );
 		
 		Room[][] building = new Room[11][11];
@@ -98,15 +98,12 @@ public class Runner
 		Board game = new Board(building);
 		
 		//Setup player 1 and the input scanner
-		//Scanner in1 = new Scanner(System.in);
-		//String FirstName = in1.nextLine();
-		
 		Person player1 = new Person("FirstName", "FamilyName", 0,0);
 		building[0][0].enterRoom(player1);
 		Scanner in = new Scanner(System.in);
 		while(gameOn)
 		{
-			game.printMap();
+			
 			System.out.println("\nWhich way should I go? (Choose N, S, E, W)" +  "\n_______________________________________________"+  "\n\n\n\n");
 			String move = in.nextLine();
 			if(validMove(move, player1, building))
