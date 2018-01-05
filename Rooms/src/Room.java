@@ -14,7 +14,7 @@ public class Room
 	
 	public void enterRoom(Person x)
 	{
-		System.out.println(getrando());
+		System.out.println(getrando() + "\n");
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
@@ -46,7 +46,7 @@ public class Room
 	
 	private String [] randomroomerz= 
 	{
-		"Empty room.",
+		"Another empty room.",
 		"Ain't much in here, gotta keep moving.",
 		"*runs across in fear* N-nothing in here",
 		"*has an existential crisis, nothing even happened*",

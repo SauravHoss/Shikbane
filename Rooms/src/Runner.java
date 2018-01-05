@@ -8,9 +8,11 @@ public class Runner
 	public static void main(String[] args)
 	{
 
-		System.out.println("Shikabane \n \n \n");
-		System.out.println("By Daniel Li and Saurav Hossain");
-		System.out.println("Welcome to a world of misery. Press 'Enter' to Begin.");
+		System.out.println("					   SQUARE ENIX \n");
+		System.out.println("					     PRESENTS \n");
+		System.out.println("			   An original by Daniel Li and Saurav Hossain.\n\n\n");
+		System.out.println("					    SHIKABANE\n\n\n");
+		System.out.println("			Welcome to a world of misery. Press 'Enter' to Begin.");
 		
 		Room[][] building = new Room[11][11];
 		
@@ -101,16 +103,16 @@ public class Runner
 		Scanner in = new Scanner(System.in);
 		while(gameOn)
 		{
-			System.out.println("Which way should I go? (Choose N, S, E, W)" + "\n");
+			System.out.println("\nWhich way should I go? (Choose N, S, E, W)" +  "\n_______________________________________________"+  "\n\n\n\n");
 			String move = in.nextLine();
 			if(validMove(move, player1, building))
 			{
-				System.out.println("My Coordinates: Row = " + player1.getxLoc() + " Col = " + player1.getyLoc() + "					Lives:" + player1.lives);
+				System.out.println("\nMy Coordinates: Row = " + player1.getxLoc() + " Col = " + player1.getyLoc() + "					Lives:" + player1.lives + "\n");
 				game.printMap();
 			}
 			else 
 			{
-				System.out.println(getrandoz());
+				System.out.println(getrandoz() + "\n");
 				game.printMap();
 			}
 				
@@ -190,11 +192,11 @@ public class Runner
 	private static String [] randomz= 
 	{
 		"Nuh-uh.",
-		"Can't go that way",
+		"Can't go that way.",
 		"I must say no.",
 		"Not that way boss.",
 		"Can't go that way.",
-		"I ain't running face worst into a wall.",
+		"I ain't running face first into a wall.",
 		"Ain't no door over there.",
 		"Negative."
 	};

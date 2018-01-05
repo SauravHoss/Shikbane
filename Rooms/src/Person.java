@@ -1,3 +1,4 @@
+import java.util.Random;
 
 public class Person 
 {
@@ -40,15 +41,31 @@ public class Person
 		if (lives !=0)
 		{
 		lives--;
-		System.out.println("\n YOU DIED.");
+		System.out.println("\nYOU DIED.\n");
 		}
 		else 
 		{
-			System.out.println("You can love no more.");
+			System.out.println(getRando() + "\n");
 			Runner.gameOff();
 		}
 	}
 
+	private String getRando () 
+	{
+		Random r = new Random ();
+		return randomdedmsgs[r.nextInt(randomdedmsgs.length)];
+	}
+	
+	private String [] randomdedmsgs = 
+	{
+		"It's all over kiddo.",
+		"Ya, you ain't got no more lives.",
+		"Your out of mulligans boy.",
+		"You clearly suck at video games.",
+		"Dead af dude."
+	};
+	
+	
 	public void print() 
 	{
 		
