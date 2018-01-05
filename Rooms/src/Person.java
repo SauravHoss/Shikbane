@@ -45,7 +45,7 @@ public class Person
 		}
 		else 
 		{
-			System.out.println(getRando() + "\n");
+			System.out.println("\n" + getRando() + "\n");
 			Runner.gameOff();
 		}
 	}

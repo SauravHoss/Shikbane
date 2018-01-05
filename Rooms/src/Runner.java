@@ -8,11 +8,14 @@ public class Runner
 	public static void main(String[] args)
 	{
 
-		System.out.println("					   SQUARE ENIX \n");
-		System.out.println("					     PRESENTS \n");
-		System.out.println("			   An original by Daniel Li and Saurav Hossain.\n\n\n");
-		System.out.println("					    SHIKABANE\n\n\n");
-		System.out.println("			Welcome to a world of misery. Press 'Enter' to Begin.");
+		System.out.println("					   SQUARE ENIX \n" 
+							+ "\n					     PRESENTS \n" 
+							+ "\n			   An original by Daniel Li and Saurav Hossain.\n\n\n"
+							+ "\n					    SHIKABANE\n\n\n"
+							+ "You've wandered into the wrong place traveler. The only thing you know here is where you died last \nand where you are currently (both marked with an 'x', so conveniently)."
+							+ " Sometimes dying is good. \nSometimes it's not. Figure it out for yourself, what am I your mommy?."
+							+ " Welcome to a world of misery. \n\n	        		    Press 'Enter' to Begin."
+						  );
 		
 		Room[][] building = new Room[11][11];
 		
@@ -112,7 +115,7 @@ public class Runner
 			}
 			else 
 			{
-				System.out.println(getrandoz() + "\n");
+				System.out.println("\n" + getrandoz() + "\n");
 				game.printMap();
 			}
 				

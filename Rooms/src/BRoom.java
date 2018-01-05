@@ -13,7 +13,7 @@ public class BRoom extends Room
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
 		x.lives++;
-		System.out.println("Is this a blessing or a curse? Why am I back to the beginning?");
+		System.out.println("\nIs this a blessing or a curse? Why am I back to the beginning?");
 		
 	}
 	

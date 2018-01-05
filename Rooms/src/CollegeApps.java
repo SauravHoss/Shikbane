@@ -33,7 +33,7 @@ public class CollegeApps extends Room
 		"A monster split you in twain.",
 		"A witch decapatated you.",
 		"You had a heartattack. Shouldn't have had that other burger.",	
-		"Enjoy, your new you!",
+		"Enjoy, death!",
 		"Aww. Again?",
 		"Hyperion wishes to remind you that by using the respawn station, you have forfeited your right to reproduce.",
 		"I'm sure it wasn't your fault.",
