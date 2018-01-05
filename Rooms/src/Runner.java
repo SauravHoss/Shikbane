@@ -98,14 +98,15 @@ public class Runner
 		Board game = new Board(building);
 		
 		//Setup player 1 and the input scanner
-		Scanner in1 = new Scanner(System.in);
-		String FirstName = in1.nextLine();
+		//Scanner in1 = new Scanner(System.in);
+		//String FirstName = in1.nextLine();
 		
 		Person player1 = new Person("FirstName", "FamilyName", 0,0);
 		building[0][0].enterRoom(player1);
 		Scanner in = new Scanner(System.in);
 		while(gameOn)
 		{
+			game.printMap();
 			System.out.println("\nWhich way should I go? (Choose N, S, E, W)" +  "\n_______________________________________________"+  "\n\n\n\n");
 			String move = in.nextLine();
 			if(validMove(move, player1, building))
