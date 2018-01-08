@@ -104,8 +104,8 @@ public class Runner
 		
 		//Create a board.
 		Board game = new Board(building);
+		Board game2 = new Board(building);
 		
-		game.printMap();
 		//Setup player 1 and the input scanner
 		Person player1 = new Person("FirstName", "FamilyName", 0,0);
 		building[0][0].enterRoom(player1);
@@ -119,11 +119,15 @@ public class Runner
 			{
 				System.out.println("\nMy Coordinates: Row = " + player1.getxLoc() + " Col = " + player1.getyLoc() + "					Lives:" + player1.lives + "\n");
 				game.printMap();
+				System.out.println();
+				game2.printMap();
 			}
 			else 
 			{
 				System.out.println("\n" + getrandoz() + "\n");
 				game.printMap();
+				System.out.println();
+				game2.printMap();
 			}
 				
 		}
