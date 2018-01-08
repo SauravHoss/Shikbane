@@ -65,9 +65,4 @@ public class Person
 		"Dead af dude."
 	};
 	
-	
-	public void print() 
-	{
-		
-	}
 }

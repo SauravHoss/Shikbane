@@ -11,7 +11,7 @@ public class Runner
 		System.out.println("					   SQUARE ENIX \n" 
 							+ "\n					     PRESENTS \n" 
 							+ "\n			   An original by Daniel Li and Saurav Hossain.\n\n\n"
-							+ "\n			                The Smart Pants Game\n\n\n"
+							+ "\n			                The Smarty Pants Game\n\n\n"
 							+ "You've wandered into the wrong place traveler. The only thing you know here is where you died last \nand where you are currently (both marked with an 'x', so conveniently)."
 							+ " Sometimes dying is good. \nSometimes it's not. Figure it out for yourself, what am I your mommy?."
 							+ " Welcome to the testing grounds. \n\n	        		            Good Luck. "
@@ -96,6 +96,7 @@ public class Runner
 		
 		//Create a board.
 		Board game = new Board(building);
+		Board game2 = new Board(building);
 		
 		//Setup player 1 and the input scanner
 		Person player1 = new Person("FirstName", "FamilyName", 0,0);
@@ -110,11 +111,13 @@ public class Runner
 			{
 				System.out.println("\nMy Coordinates: Row = " + player1.getxLoc() + " Col = " + player1.getyLoc() + "					Lives:" + player1.lives + "\n");
 				game.printMap();
+				game2.printMap();
 			}
 			else 
 			{
 				System.out.println("\n" + getrandoz() + "\n");
 				game.printMap();
+				game2.printMap();
 			}
 				
 		}

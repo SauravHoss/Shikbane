@@ -32,7 +32,7 @@ public class Room
 		}
 		else if(occupant!=null)
 		{
-			System.out.print("[x");
+			System.out.print("[o");
 			occupant.print();
 			System.out.print("]");
 		}
