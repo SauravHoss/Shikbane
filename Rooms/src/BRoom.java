@@ -27,7 +27,7 @@ public class BRoom extends Room
 	private static String [] random= 
 	{
 		"Sweet, a one up. Crap, I'm back at spawn.",
-		"*gets teleported back to spawn again*",
+		"*gets teleported back to spawn again* Is the extra life even worth it?",
 		
 	};
 	
