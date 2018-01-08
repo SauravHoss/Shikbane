@@ -11,10 +11,10 @@ public class Runner
 		System.out.println("					   SQUARE ENIX \n" 
 							+ "\n					     PRESENTS \n" 
 							+ "\n			   An original by Daniel Li and Saurav Hossain.\n\n\n"
-							+ "\n					    SHIKABANE\n\n\n"
+							+ "\n			                The Smart Pants Game\n\n\n"
 							+ "You've wandered into the wrong place traveler. The only thing you know here is where you died last \nand where you are currently (both marked with an 'x', so conveniently)."
 							+ " Sometimes dying is good. \nSometimes it's not. Figure it out for yourself, what am I your mommy?."
-							+ " Welcome to a world of misery. \n\n	        		     Press 'Enter' to Begin. "
+							+ " Welcome to the testing grounds. \n\n	        		            Good Luck. "
 						  );
 		
 		Room[][] building = new Room[11][11];
@@ -104,7 +104,7 @@ public class Runner
 		while(gameOn)
 		{
 			
-			System.out.println("\nWhich way should I go? (Choose N, S, E, W)" +  "\n_______________________________________________"+  "\n\n\n\n");
+			System.out.println("\n" + getrando() + " (Choose N, S, E, W)" +  "\n_______________________________________________"+  "\n\n\n\n");
 			String move = in.nextLine();
 			if(validMove(move, player1, building))
 			{
@@ -200,5 +200,22 @@ public class Runner
 		"I ain't running face first into a wall.",
 		"Ain't no door over there.",
 		"Negative."
+	};
+	
+	private static String getrando()
+	{
+		Random r = new Random();
+		return random[r.nextInt(random.length)];	
+	}
+	
+	private static String [] random= 
+	{
+		"Where to now?",
+		"Which way should I go?",
+		"Where should I go next?",
+		"This room is boring. Where do I go next?",
+		"I kinda wanna take a nap, but I guess I should keep moving. Which way?",
+		"*low key fell asleep* *SNORE* OH WHAT...oh, which way?"
+		
 	};
 }

@@ -1,3 +1,4 @@
+import java.util.Random;
 
 public class MerchantRoom extends Room
 {
@@ -14,7 +15,21 @@ public class MerchantRoom extends Room
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
-		System.out.println("\nWhat happened? How did I get here?");
+		System.out.println("\n" + getrando());
 	}
+	
+	
+	private static String getrando()
+	{
+		Random r = new Random();
+		return random[r.nextInt(random.length)];	
+	}
+	
+	private static String [] random= 
+	{
+		"Oh gosh. Where am I now, what's with the teleporting?",
+		"*get le teleported*",
+		"That darn teleportation messin up my flow."
+	};
 	
 }

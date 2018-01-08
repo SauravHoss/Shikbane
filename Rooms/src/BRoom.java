@@ -1,3 +1,4 @@
+import java.util.Random;
 
 public class BRoom extends Room 
 {
@@ -13,15 +14,21 @@ public class BRoom extends Room
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
 		x.lives++;
-		System.out.println("\nIs this a blessing or a curse? Why am I back to the beginning?");
+		System.out.println("\n" + getrando());
 		
 	}
 	
-	public void returnBegin(Person x) 
+	private static String getrando()
 	{
-		occupant = x;
-		x.setxLoc(0);
-		x.setyLoc(0);
-		System.out.println("poof~");
+		Random r = new Random();
+		return random[r.nextInt(random.length)];	
 	}
+	
+	private static String [] random= 
+	{
+		"Sweet, a one up. Crap, I'm back at spawn.",
+		"*gets teleported back to spawn again*",
+		
+	};
+	
 }
