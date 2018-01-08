@@ -15,7 +15,7 @@ public class WinningRoom extends Room
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
 		
-		System.out.println("I commend you on making it here. You must answer one final question.\n");
+		System.out.println("\nI commend you on making it here. You must answer one final question.\n");
 		System.out.println("Do you like " + getrando() + "?" +"\n\n\n\n\n");
 		
 		@SuppressWarnings("resource")
@@ -28,7 +28,7 @@ public class WinningRoom extends Room
 		}
 		else
 		{
-			System.out.println("Wrong Answer. Thou art doomed to walk the trial again.");
+			System.out.println("\nWrong Answer. Thou art doomed to walk the trial again.");
 			x.lives--;
 			x.setxLoc(0);
 			x.setyLoc(0);

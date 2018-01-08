@@ -14,7 +14,7 @@ public class Room
 	
 	public void enterRoom(Person x)
 	{
-		System.out.println("\n"+getrando() + "\n");
+		System.out.println("\n"+getrando() );
 		occupant = x;
 		x.setxLoc(this.xLoc);
 		x.setyLoc(this.yLoc);
